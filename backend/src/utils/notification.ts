@@ -1,10 +1,19 @@
 // src/utils/notification.ts
 import axios from "axios";
+import dotenv from "dotenv";
 
-const SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"; // Replace with your actual URL
-const WEBHOOK_SITE_URL = "https://webhook.site/01e83d0c-38b3-4870-959e-6556e202cbb7"; // Replace with your webhook.site link
+// Load environment variables
+dotenv.config();
+
+const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK_URL;
+const WEBHOOK_SITE_URL = process.env.WEBHOOK_SITE_URL;
 
 export async function sendSlackNotification(subject: string, from: string) {
+  if (!SLACK_WEBHOOK_URL) {
+    console.error("SLACK_WEBHOOK_URL not configured");
+    return;
+  }
+  
   try {
     await axios.post(SLACK_WEBHOOK_URL, {
       text: `📬 *Interested Email*\n*Subject:* ${subject}\n*From:* ${from}`,
@@ -15,6 +24,11 @@ export async function sendSlackNotification(subject: string, from: string) {
 }
 
 export async function triggerWebhook(data: any) {
+  if (!WEBHOOK_SITE_URL) {
+    console.error("WEBHOOK_SITE_URL not configured");
+    return;
+  }
+  
   try {
     await axios.post(WEBHOOK_SITE_URL, data);
   } catch (err) {
