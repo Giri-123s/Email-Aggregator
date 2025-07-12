@@ -1,0 +1,161 @@
+.sidebar {
+  width: 280px;
+  background: #f8f9fa;
+  border-right: 1px solid #e1e5e9;
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid #e1e5e9;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sidebar-section {
+  padding: 15px 0;
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.sidebar-section:last-child {
+  border-bottom: none;
+}
+
+.sidebar-section h4 {
+  margin: 0 20px 10px 20px;
+  color: #666;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.folder-item {
+  margin: 2px 0;
+}
+
+.folder-button {
+  width: 100%;
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+  color: #333;
+  font-size: 14px;
+}
+
+.folder-button:hover {
+  background-color: #e9ecef;
+}
+
+.folder-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.folder-button.active .folder-icon {
+  color: white !important;
+}
+
+.folder-icon {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+.folder-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.folder-count {
+  font-size: 12px;
+  color: #666;
+  font-weight: normal;
+}
+
+.folder-button.active .folder-count {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid #e1e5e9;
+  }
+  
+  .sidebar-header {
+    padding: 15px;
+  }
+  
+  .sidebar-section {
+    padding: 10px 0;
+  }
+  
+  .folder-button {
+    padding: 8px 15px;
+  }
+}
+
+/* Scrollbar styling */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.sidebar-close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.sidebar-close-btn:hover {
+  background-color: #e9ecef;
+  color: #333;
+} 
