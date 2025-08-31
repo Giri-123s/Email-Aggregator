@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 });
 
 // Search emails using Elasticsearch
-app.get("/emails", async (req, res) => {
+app.get("/emails", async (req, res) => { 
   try {
     const query = req.query.q as string;
     const account = req.query.account as string;

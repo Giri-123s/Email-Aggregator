@@ -11,6 +11,20 @@ A comprehensive email management system with AI-powered classification, real-tim
 - **Search & Filter**: Advanced search functionality with category-based filtering
 - **Responsive Design**: Mobile-friendly interface with modern UI/UX
 
+## Screenshots
+
+### 📧 Main Email Interface
+![Main Email Interface](./screenshots/main-interface.svg)
+*Modern email management interface with AI-powered categorization*
+
+### 🔍 Search and Filtering
+![Search and Filtering](./screenshots/search-filter.svg)
+*Advanced search functionality with category-based filtering*
+
+### 📊 Email Analytics Dashboard
+![Analytics Dashboard](./screenshots/analytics-dashboard.svg)
+*Real-time email analytics and statistics*
+
 ## Project Structure
 
 ```
