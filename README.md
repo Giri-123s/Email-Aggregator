@@ -1,188 +1,135 @@
-# 🚀 ReachInbox - AI-Powered Email Onebox
+# Email Management System
 
-<div align="center">
+A comprehensive email management system with AI-powered classification, real-time notifications, and a modern web interface.
 
-![ReachInbox Banner](https://your-image-url/banner.png)
+## Features
 
-[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Site-blue?style=for-the-badge)](https://your-demo-url.com)
-[![Video Demo](https://img.shields.io/badge/🎥%20Video%20Demo-Watch-red?style=for-the-badge)](https://your-video-url.com)
-[![GitHub Repo](https://img.shields.io/badge/⭐%20Star%20Repo-GitHub-black?style=for-the-badge)](https://github.com/yourusername/reachinbox)
+- **AI Email Classification**: Machine learning model to categorize emails as interested/not interested
+- **Real-time Notifications**: Slack and webhook notifications for important emails
+- **Modern Web Interface**: React-based frontend with search and filtering capabilities
+- **Email Integration**: IMAP client for fetching emails from multiple accounts
+- **Search & Filter**: Advanced search functionality with category-based filtering
+- **Responsive Design**: Mobile-friendly interface with modern UI/UX
 
-**🏆 Built for ReachInbox Assignment Challenge - Ranked #X on Leaderboard**
-
-</div>
-
-## 🎯 Overview
-
-A **feature-rich email aggregator** that synchronizes multiple IMAP accounts in real-time and provides AI-powered categorization, similar to ReachInbox. Built with modern tech stack and microservices architecture.
-
-### ✨ Key Features
-
-🔄 **Real-Time Email Sync** - IMAP IDLE connections (no polling!)  
-🤖 **AI Categorization** - ML-powered email classification  
-🔍 **Advanced Search** - Elasticsearch-powered email search  
-📊 **Smart Analytics** - Account & category insights  
-💬 **Slack Integration** - Auto-notifications for interested leads  
-🎯 **Webhook Automation** - External system integrations  
-🎨 **Modern UI** - Clean, responsive React interface  
-
-## 🏗️ Architecture
+## Project Structure
 
 ```
-┌─────────────┐    ┌──────────────┐    ┌─────────────┐
-│   Frontend  │───▶│   Backend    │───▶│  AI Service │
-│  (React TS) │    │ (Node.js TS) │    │  (Python)   │
-└─────────────┘    └──────────────┘    └─────────────┘
-                           │
-                           ▼
-                   ┌──────────────┐
-                   │ Elasticsearch│
-                   │   (Docker)   │
-                   └──────────────┘
+├── ai_model/          # AI/ML components
+│   ├── data/         # Training data
+│   ├── models/       # Trained models
+│   └── train_model.py # Model training script
+├── backend/          # Node.js/TypeScript backend
+│   ├── src/
+│   │   ├── api/      # API endpoints
+│   │   ├── email/    # Email handling
+│   │   ├── services/ # Business logic
+│   │   └── utils/    # Utilities
+├── frontend/         # React frontend
+│   ├── src/
+│   │   ├── components/ # React components
+│   │   └── services/   # API services
+└── docker-compose.yml # Docker configuration
 ```
 
-## 🚀 Tech Stack
+## Tech Stack
+
+### Backend
+- **Node.js** with TypeScript
+- **Express.js** for API endpoints
+- **IMAP** for email fetching
+- **Elasticsearch** for search functionality
+- **Axios** for HTTP requests
 
 ### Frontend
-- **React 18** with TypeScript
-- **Tailwind CSS** for styling  
-- **WebSocket** for real-time updates
-- **React Query** for state management
+- **React** with TypeScript
+- **CSS** for styling
+- **Axios** for API communication
 
-### Backend  
-- **Node.js** with Express & TypeScript
-- **IMAP** with IDLE mode for real-time sync
-- **Elasticsearch** for searchable email storage
-- **Redis** for caching & session management
+### AI/ML
+- **Python** with scikit-learn
+- **Pickle** for model serialization
+- **Pandas** for data manipulation
 
-### AI/ML Service
-- **Python Flask** API
-- **scikit-learn** for ML models
-- **TF-IDF + Random Forest** ensemble
-- **NLTK** for text preprocessing
-
-### DevOps
-- **Docker** containerization
-- **Docker Compose** for multi-service setup
-- **GitHub Actions** CI/CD pipeline
-
-## 📊 Performance Metrics
-
-- ⚡ **<100ms** average email categorization time
-- 🎯 **89%** AI classification accuracy  
-- 📧 **Real-time** sync with IDLE connections
-- 🔍 **Sub-second** search results with Elasticsearch
-- 📈 **Zero** polling - pure event-driven architecture
-
-## 🎥 Demo & Screenshots
-
-### Live Demo
-👉 **[Try it live here](https://your-demo-url.com)**
-
-### Video Walkthrough (3 mins)
-[![Video Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
-
-### Screenshots
-<details>
-<summary>📸 Click to view screenshots</summary>
-
-![Dashboard](screenshots/dashboard.png)
-*Real-time email dashboard with AI categorization*
-
-![Search](screenshots/search.png)  
-*Advanced search with filters*
-
-![Analytics](screenshots/analytics.png)
-*Account analytics and insights*
-
-</details>
-
-## 🚀 Quick Start
+## Getting Started
 
 ### Prerequisites
-- Node.js 18+
-- Python 3.9+
-- Docker & Docker Compose
+- Node.js (v14 or higher)
+- Python 3.7+
+- Docker (optional)
 
-### 1. Clone & Setup
-```bash
-git clone https://github.com/yourusername/reachinbox.git
-cd reachinbox
+### Installation
 
-# Start Elasticsearch
-docker-compose up -d elasticsearch
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd NEWASSIGNMENT
+   ```
 
-# Setup AI service
-cd ai_model
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python predict.py &
+2. **Install backend dependencies**
+   ```bash
+   cd backend
+   npm install
+   ```
 
-# Setup backend
-cd ../backend  
-npm install
-npm run dev &
+3. **Install frontend dependencies**
+   ```bash
+   cd ../frontend
+   npm install
+   ```
 
-# Setup frontend
-cd ../frontend
-npm install
-npm start
-```
+4. **Install AI model dependencies**
+   ```bash
+   cd ../ai_model
+   pip install -r requirements.txt
+   ```
 
-### 2. Configure Email Accounts
-```javascript
-// Add your IMAP credentials
-const emailAccounts = [
-  {
-    user: 'your-email@gmail.com',
-    password: 'app-password',
-    host: 'imap.gmail.com',
-    port: 993,
-    tls: true
-  }
-];
-```
+### Configuration
 
-## 📈 Assignment Features Implemented
+1. **Backend Configuration**
+   - Update email account settings in `backend/src/config/accounts.ts`
+   - Configure Slack webhook in `backend/src/utils/notification.ts`
 
-| Feature | Status | Implementation |
-|---------|--------|---------------|
-| ✅ Real-time IMAP Sync | **Complete** | IDLE mode, 2+ accounts, 30+ days |
-| ✅ Elasticsearch Storage | **Complete** | Local Docker, searchable, filtered |
-| ✅ AI Categorization | **Complete** | 5 categories, 89% accuracy |
-| ✅ Slack/Webhook Integration | **Complete** | Auto-triggers on "Interested" |
-| ✅ Frontend Interface | **Complete** | React, search, filters, responsive |
-| 🚧 RAG Reply Suggestions | **In Progress** | Vector DB + LLM integration |
+2. **AI Model Training**
+   ```bash
+   cd ai_model
+   python train_model.py
+   ```
 
-## 🏆 Results & Recognition
+### Running the Application
 
-- 📊 **#X Position** on ReachInbox Assignment Leaderboard
-- ⭐ **89% AI Accuracy** - Outperformed baseline by 15%
-- 🚀 **Zero Downtime** - Reliable real-time email sync
-- 💡 **Innovative Architecture** - Clean microservices design
+1. **Start the backend**
+   ```bash
+   cd backend
+   npm start
+   ```
 
-## 🤝 Contributing
+2. **Start the frontend**
+   ```bash
+   cd frontend
+   npm start
+   ```
 
-Contributions welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+3. **Access the application**
+   - Frontend: http://localhost:3000
+   - Backend API: http://localhost:5000
 
-## 📜 License
+## API Endpoints
 
-MIT License - see [LICENSE](LICENSE) for details.
+- `GET /api/emails` - Fetch emails
+- `POST /api/search` - Search emails
+- `GET /api/categories` - Get email categories
 
-## 👨‍💻 Author
+## Contributing
 
-**Shivam Kumar Giri**
-- 📧 Email: shivamkumargiri779@gmail.com  
-- 💼 LinkedIn: [linkedin.com/in/giri-123s](https://linkedin.com/in/giri-123s)
-- 🐱 GitHub: [@Giri-123s](https://github.com/Giri-123s)
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
----
+## License
 
-<div align="center">
+This project is licensed under the MIT License.
 
-**⭐ If this project helped you, please give it a star! ⭐**
+## Support
 
-*Built with ❤️ for the ReachInbox Assignment Challenge*
-
-</div>
+For support and questions, please open an issue in the GitHub repository. 
