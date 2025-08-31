@@ -5,7 +5,6 @@
 ![ReachInbox Banner](https://your-image-url/banner.png)
 
 [![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Site-blue?style=for-the-badge)](https://your-demo-url.com)
-[![Video Demo](https://img.shields.io/badge/🎥%20Video%20Demo-Watch-red?style=for-the-badge)](https://your-video-url.com)
 [![GitHub Repo](https://img.shields.io/badge/⭐%20Star%20Repo-GitHub-black?style=for-the-badge)](https://github.com/yourusername/reachinbox)
 
 **🏆 Built for ReachInbox Assignment Challenge - Ranked #X on Leaderboard**
