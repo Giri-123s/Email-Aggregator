@@ -4,8 +4,7 @@
 
 ![ReachInbox Banner](https://your-image-url/banner.png)
 
-[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Site-blue?style=for-the-badge)](https://your-demo-url.com)
-[![GitHub Repo](https://img.shields.io/badge/⭐%20Star%20Repo-GitHub-black?style=for-the-badge)](https://github.com/yourusername/reachinbox)
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Site-blue?style=for-the-badge)](screenshots/demo.gif)
 
 **🏆 Built for ReachInbox Assignment Challenge - Ranked #X on Leaderboard**
 
@@ -78,8 +77,6 @@ A **feature-rich email aggregator** that synchronizes multiple IMAP accounts in 
 ### Live Demo
 👉 **[Try it live here](https://your-demo-url.com)**
 
-### Video Walkthrough (3 mins)
-[![Video Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
 
 ### Screenshots
 <details>
