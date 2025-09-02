@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![ReachInbox Banner](https://your-image-url/banner.png)
+![ReachInbox Banner](./screenshots/search.png)
 
 [![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Site-blue?style=for-the-badge)](screenshots/demo.gif)
 
