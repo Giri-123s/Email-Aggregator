@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![ReachInbox Banner](./screenshots/searc.png)
+![ReachInbox Banner](./screenshots/banner.png)
 
 [![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Site-blue?style=for-the-badge)](screenshots/demo.gif)
 
@@ -75,20 +75,10 @@ A **feature-rich email aggregator** that synchronizes multiple IMAP accounts in 
 
 ## 🎥 Demo & Screenshots
 
-### Live Demo
-👉 **[Try it live here](https://your-demo-url.com)**
-
-
 ### Screenshots
-
-![Main Email Interface](screenshots/Screenshot 2025-09-01 at 12.34.23 AM.png)
-*Modern email management interface with AI-powered categorization*
 
 ![Search and Filtering](screenshots/search.png)
 *Advanced search functionality with category-based filtering*
-
-![Analytics Dashboard](screenshots/Screenshot 2025-09-01 at 12.34.07 AM.png)
-*Real-time email analytics and statistics*
 
 *Demo*
 
