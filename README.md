@@ -5,7 +5,6 @@
 ![ReachInbox Banner](https://your-image-url/banner.png)
 
 [![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Site-blue?style=for-the-badge)](screenshots/demo.gif)
-![Dashboard View](./screenshots/demo.png)
 
 **🏆 Built for ReachInbox Assignment Challenge - Ranked #X on Leaderboard**
 
