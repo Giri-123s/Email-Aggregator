@@ -81,15 +81,18 @@ A **feature-rich email aggregator** that synchronizes multiple IMAP accounts in 
 
 ### Screenshots
 
-![Main Email Interface](screenshots/search.png)
+![Main Email Interface](screenshots/Screenshot 2025-09-01 at 12.34.23 AM.png)
 *Modern email management interface with AI-powered categorization*
 
-![Search and Filtering](screenshots/demo.gif)
+![Search and Filtering](screenshots/search.png)
 *Advanced search functionality with category-based filtering*
 
-![Analytics Dashboard](screenshots/analytics-dashboard.svg)
+![Analytics Dashboard](screenshots/Screenshot 2025-09-01 at 12.34.07 AM.png)
 *Real-time email analytics and statistics*
-![Dashboard View](screenshots/search.png)
+
+*Demo*
+
+![Dashboard View](screenshots/demo.gif)
 
 
 ## 🚀 Quick Start
