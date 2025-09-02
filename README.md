@@ -92,6 +92,7 @@ A **feature-rich email aggregator** that synchronizes multiple IMAP accounts in 
 
 ![Analytics Dashboard](screenshots/analytics-dashboard.svg)
 *Real-time email analytics and statistics*
+![Dashboard View](./screenshots/search.png)
 
 </details>
 
